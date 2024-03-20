@@ -1,0 +1,78 @@
+/* style de la modale */
+
+.modale-place {
+    display: none;
+    width: 100%;
+    margin-top: 800px;
+    position: fixed;
+    
+}
+
+#modale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modale-content {
+    width: 597px;
+    border: 5px black solid;
+    background-color: white;
+}
+
+.modale-button {
+    border-radius: 100px;
+    border-color: black;
+    background-color: white;
+    margin-left: 580px;
+}
+
+.modale-button:hover {
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wpcf7-form {
+    padding: 30px;
+}
+
+.form {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wpcf7-form-control {
+    border-radius: 8px;
+    border: 1px solid #B8BBC2;
+    width: 263px;
+}
+
+.wpcf7-text {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.wpcf7-textarea {
+    margin-top: 5px;
+}
+
+.wpcf7-submit {
+    display: flex;
+    border: none;
+    border-radius: 2px;
+    background-color: #D8D8D8;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
