@@ -13,7 +13,12 @@
         <header>
             <!-- Ajout d'un custom logo modifiable via le tableau de bord -->
             <div class="logo">
-                <?php the_custom_logo() ?>
+                <div>
+                    <?php the_custom_logo() ?>
+                </div>  
+                <div>
+                    <img class="burger-open" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/burger-open.png' ?>" alt="Icone burger" />
+                </div>      
             </div>
             <!-- Appel du menu principal modifiable dans le tableau de bord -->
             <nav>

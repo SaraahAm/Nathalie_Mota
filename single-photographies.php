@@ -102,7 +102,7 @@ if ($custom_query->have_posts()) :
 						$last_post = $last_post->posts[0];
 					?>
 						<a href="<?php echo get_permalink($last_post); ?>">
-							<img class="right-arrow" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-gauche.png' ?>" alt="Flèche de gauche" />
+							<img class="left-arrow" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-gauche.png' ?>" alt="Flèche de gauche" />
 						</a>
 					<?php endif; ?>
 				</div>
@@ -115,23 +115,19 @@ if ($custom_query->have_posts()) :
 					if (!empty($next_post)) :
 					?>
 						<a href="<?php echo get_permalink($next_post); ?>">
-							<img class="..." src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-droite.png' ?>" alt="Flèche de droite" />
+							<img class="right-arrow" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-droite.png' ?>" alt="Flèche de droite" />
 						</a>
 					<!-- Si post suivant non-existant, affichage du premier post publié -->
 					<?php else :
 						$first_post = $first_post->posts[0]; 
 					?>
 						<a href="<?php echo get_permalink($first_post); ?>">
-							<img class="..." src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-droite.png' ?>" alt="Flèche de droite"/>
+							<img class="right-arrow" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/fleche-navigation-droite.png' ?>" alt="Flèche de droite"/>
 						</a>
 					<?php endif; ?>
 				</div>
 			</div>
-
-		</div>
-	</div>
-
-	<div class="div-vignettes">
+			<div class="div-vignettes">
 				<div class="conteneur-vignette-precedent">
 					<?php
 						// Récupération de la photo du post précédent
@@ -157,6 +153,10 @@ if ($custom_query->have_posts()) :
 					?>
 				</div>
 		</div>
+		</div>
+	</div>
+
+	
 <?php
     endwhile;
     	wp_reset_postdata();
@@ -204,7 +204,6 @@ endif;
 				}
 			?>
 		</div>
-		<a href="<?php echo esc_url(home_url('/')); ?>"><button class="...">Toutes les photos</button></a>
 	</div>
 </div>
 

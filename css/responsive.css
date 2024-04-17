@@ -1,0 +1,167 @@
+/**** Menu ****/
+
+/* Masquer burger menu pour les écrans supérieur à 900px */
+@media screen and (min-width: 900px) {
+    nav {
+        display: block;
+    }
+    .burger-open {
+        display: none;
+    }
+}
+
+/* Masquer le menu principal par défaut pour les écrans inférieur à 900px */
+@media screen and (max-width: 900px) {
+    .burger-open{
+        display: none;
+}
+
+@media (max-width: 769px) {
+
+    .modale-place {
+        margin-top: 0;
+    }
+
+    /* Header */
+    .logo img {
+        max-width: 200px;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav {
+        display: none;
+        width: 100%;
+        z-index: 300;
+        background-color: red;
+        margin: 0;
+        justify-content: center;
+        padding: 150px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    nav ul.menu li a{
+        color: white;
+        font-size: 44px;
+    }
+
+    .burger-open{
+        display: block;
+    }
+
+    .logo {
+        margin: 0px 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+}
+
+    /******* Footer ********/
+    
+    #menu-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    /**** front page ****/
+    
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0px 30px 0px;
+    }
+    
+    #filtre-tri {
+        padding-left: 0px;
+    }
+    
+    .zone-les-photos {
+        grid-template-columns: 564px;
+    }
+
+    /**** single photo ****/
+    
+    .metas-and-photos {
+        flex-direction: column-reverse;
+        border-bottom: 1px solid black;
+    }
+    
+    .photos {
+        width: 100%;
+        margin-right: 0px;    
+    }
+
+    .photo {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .metas {
+        width: 100%;
+        border-bottom: 0px solid black;
+        margin-bottom: 30px;
+    }
+
+    .contact-banner {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 30px;
+    }
+
+    .contact-button {
+        width: 100%;
+    }
+
+    .contact-photos {
+        border-bottom: 0px;
+    }
+
+    .arrow-photo {
+        display: none;
+    }
+
+    .affichage-photo {
+        grid-template-columns: 564px;
+        margin: 20px 0;
+    }
+
+    .see-more {
+        border-top: 1px solid black;
+        margin: 0px;
+    }
+
+    .see-more h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+/*** modale **/ 
+
+    .modale-content {
+        width: 60%;
+        z-index: 1000;
+    }
+
+    .modale-content img {
+        width: 100%;
+    }
+
+    .modale-button {
+        margin-left: 370px;
+    }
+}
+

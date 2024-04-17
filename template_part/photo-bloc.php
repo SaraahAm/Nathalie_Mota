@@ -31,11 +31,11 @@
 <!-- Affichage du bloc photo -->
 <div class="autres-photos">
     <div class="lien-photo">
-        <?php //echo $lien_post; ?>
+        <?php echo $lien_post; ?>
     </div>
     <?php echo $photo_post; ?>
     <div class="survol-photo">
-        <div class="...">
+        <div class="informations-photo">
             <div class="haut-survol">
                 <i class="fa-solid fa-expand full-screen" style="color: #ffffff;"></i>
             </div>
@@ -43,11 +43,11 @@
                 <i class="fa-regular fa-eye oeil" style="color: #ffffff;"></i>
             </div>
             <div class="bas-survol">
-                <div class="...">
-                    <?php //echo $reference_photo ?>
+                <div class="reference-photo">
+                    <?php echo $reference_photo ?>
                 </div>
-                <div class="...">
-                    <?php //echo $liste_categories; ?>
+                <div class="categorie-photo">
+                    <?php echo $liste_categories; ?>
                 </div>
             </div>
         </div>
