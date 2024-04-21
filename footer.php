@@ -12,12 +12,7 @@
                     ));
                 ?>
             </div>
-            <!-- Affichage de la page contact-->
-            <div>
-                <?php 
-                    get_template_part( 'template-parts/contact' ); 
-                ?>
-            </div>
+            <!-- Lightbox -->
             <div class="lightbox">
                 <div class="lightbox-fermeture">
                     <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
