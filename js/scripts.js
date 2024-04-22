@@ -7,12 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	boutonContact.addEventListener("click", function() {
 	    // Gestion de la fermeture de la modale - En cliquant à nouveau sur Contact
 	    if (modale.style.display === "block") {
-			//console.log('cc')
 	        modale.style.display = "none";
 	    }
 	    else {
 	        modale.style.display = "block";
-			//console.log('hi')
 	    }
 	});
 
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	    modale.style.display = "none";
 	});
 
-    	// Fermeture de la modale lorsqu'on clic hors de la modale - facultatif
+    	// Fermeture de la modale lorsqu'on clic hors de la modale 
 	window.addEventListener('click', (event) => {
 	    if (event.target === conteneurModale) {
 	        modale.style.display = "none";
